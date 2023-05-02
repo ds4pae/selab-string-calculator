@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("1 + 1 = 2");
+        Input input = new Input();
+        Output output = new Output();
+        Calculator calculator = new Calculator();
+        int calcResult = calculator.Calculation(input.getInput());
+
+        output.printResult(calcResult);
     }
 }
